@@ -33,4 +33,4 @@ function deleteCartItem(itemId) {
   
 }
 
-displayCartItems();
+displayCartItems(); 
