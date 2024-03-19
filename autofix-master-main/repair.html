@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Book Vehicle</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+      <link rel="stylesheet" type="text/css" href="repair.css" />
+    </head>
+    <body>
+
+        <section class="s1">
+
+            <h1 class="header1">Pricing</h1>
+
+            <div id="price">
+                <!--price tab-->
+                <div class="plan">
+                  <div class="plan-inner">
+                    <div class="entry-title">
+                      <h3>Basic Maintnance</h3>
+                      <div class="price">basic<span>Maintnance</span>
+                      </div>
+                    </div>
+                    <div class="entry-content">
+                      <ul>
+                        <li><strong>Oil change</strong> $500-1000</li>
+                        <li><strong>Spark plugs</strong> $500-1000</li>
+                        <li><strong>Air filter</strong> $300-900</li>
+                        <li><strong>Belts</strong> $500-1500</li>
+                        <li><strong>Fluids</strong> $200-700 per</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of price tab-->
+                <!--price tab-->
+                <div class="plan basic">
+                  <div class="plan-inner">
+                    <div class="entry-title">
+                      <h3>Engine</h3>
+                      <div class="price">Urgent
+                      </div>
+                    </div>
+                    <div class="entry-content">
+                      <ul>
+                        <li><strong>Leaks</strong> $1000+</li>
+                        <li><strong>No start</strong> $500+</li>
+                        <li><strong>Misfire</strong> $400-$3000</li>
+                        <li><strong>Engine Swap</strong> Quote</li>
+                        <li><strong>Engine rebuid</strong> Quote</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of price tab-->
+                <!--price tab-->
+                <div class="plan standard">
+                  <div class="plan-inner">
+                    <div class="entry-title">
+                      <h3>Electric and fuel</h3>
+                      <div class="price">Check<span></span>
+                      </div>
+                    </div>
+                    <div class="entry-content">
+                      <ul>
+                        <li><strong>Fuse</strong> $200-$500</li>
+                        <li><strong>covers</strong> $300-$1000</li>
+                        <li><strong>Alternator</strong> $900-$2500</li>
+                        <li><strong>Fuel pump</strong> $300+</li>
+                        <li><strong>Filters</strong> $300+</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of price tab-->
+                <!--price tab-->
+                <div class="plan ultimite">
+                  <div class="plan-inner">
+                    <div class="entry-title">
+                      <h3>Tuning</h3>
+                      <div class="price">Upgrade<span></span>
+                      </div>
+                    </div>
+                    <div class="entry-content">
+                      <ul>
+                        <li><strong>ECU</strong> $1500+</li>
+                        <li><strong>De-cat</strong> $2000+</li>
+                        <li><strong>Turbo</strong> Quote</li>
+                        <li><strong>Staging</strong> $10000+</li>
+                        <li><strong>Staging++</strong> Quote</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of price tab-->
+              </div>
+
+        </section>
+
+        <section class="s2">
+      <div class="container">
+        <div class="book">
+          <div class="description">
+            <h1><strong>Auto</strong> Repair</h1>
+            <p>
+              Fill out the form and confirm your booking seamlessly. Bookings confirmed are prioritized and are garanteed for urgent repairs
+            </p>
+            <div class="quote">
+              <p>
+                Wa pride ourselves on delivering exceptional service. Our dedicated team goes above and beyond to ensure your satisfaction, offering prompt assistance, expert advice, and top-notch craftsmanship, making your experience with us truly outstanding.
+              </p>
+            </div>
+            <ul>
+              <li>Super reliable service</li>
+              <li>Contact for more details</li>
+              <li>Free vehicle inspection</li>
+              <li>Garanteed satisfaction</li>
+            </ul>
+          </div>
+          <div class="form">
+            <form>
+              <div class="inpbox full">
+                <span class="flaticon-taxi"></span>
+                <select id="cars" name="cars">
+                  <option value="">Select Vehicle</option>
+                  <option value="volvo">Private car</option>
+                  <option value="saab">Motorcycle</option>
+                  <option value="fiat">Heavy goods vehicle</option>
+                  <option value="audi">Electric car</option>
+                </select>
+              </div>
+              <div class="inpbox">
+                <span class="flaticon-globe"></span>
+                <input type="text" placeholder="Location *optional">
+              </div>
+              <div class="inpbox">
+                <span class="flaticon-calendar"></span>
+                <select name="cars" id="cars" >
+                    <option value="volvo">Service</option>
+                    <option value="saab">Oil/spark plug change</option>
+                    <option value="mercedes">Other general maintance</option>
+                    <option value="audi">Engine check</option>
+                    <option value="audi">Vehicle inspection</option>
+                    <option value="audi">Steering maintnance</option>
+                    <option value="audi">Other</option>
+                  </select>
+              </div>
+              <div class="inpbox">
+                <span class="flaticon-location"></span>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" placeholder="Time" required />
+              </div>
+              <div class="inpbox">
+                <span class="flaticon-calendar"></span>
+                <input type="date" placeholder="Drop Date">
+              </div>
+              <div class="inpbox">
+                <span class="flaticon-user"></span>
+                <input type="text" placeholder="Full Name">
+              </div>
+              <div class="inpbox">
+                <span class="flaticon-email"></span>
+                <input type="email" placeholder="Email">
+              </div>
+              <h1>For Tuners</h1>
+              <div class="inpbox full">
+                
+                <div class="inrbox">
+                  <span class="flaticon-taxi"> Tuning</span>
+                  <input type="radio" name="plan">
+                  <h2>ECU</h2>
+                </div>
+                <div class="inrbox">
+                  <span class="flaticon-taxi">Parts</span>
+                  <input type="radio" name="plan">
+                  <h2>Upgrade</h2>
+                </div>
+              </div>
+              <button class="subt" onclick="thankYou()">Submit</button>
+              <button class="rst">Reset</button>
+            </form>
+          </div>
+        </div>
+        <a href="index.html" id="home-link">Back to homepage</a>
+      </div>
+
+    </section>
+
+    <script src="repair.js"></script>
+    <script>
+      function thankYou() {
+        alert("Thank you! Your appointment has been reserved.")
+      }
+    </script>
+
+</body>
+</html>

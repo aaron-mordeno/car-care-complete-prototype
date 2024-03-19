@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Group 3</title>
+  </head>
+  <body>
+
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="#" class="nav_logo">Rent my ride</a>
+        <ul class="nav_list">
+          <li class="nav_item"><a href="/Buy/E-Commerce-Website-main/index.html" class="nav_link">Buy</a></li>
+          <li class="nav_item"><a href="/Buy/E-Commerce-Website-main/rent.html" class="nav_link">Rent</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">Project cars</a></li>
+          <li class="nav_item"><a href="/Buy/E-Commerce-Website-main/cart.html" class="nav_link">Cart</a></li>
+  
+        </ul>
+        <div class="nav_items">
+          <form action="#" class="nav_form">
+            <input
+              type="text"
+              class="nav_input"
+              placeholder="search here...." />
+            <img src="./image/search.png" alt="" class="nav_search" />
+          </form>
+
+        </div>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </span>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="/" class="mobile_nav_link">Buy</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Rent</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Projects</a>
+        </li>
+    
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="container header_container">
+        <div class="header_filter">
+          <a href="#" class="header_filter_link">Electric</a>
+          <a href="#" class="header_filter_link">Internal combustion</a>
+          <a href="#" class="header_filter_link">German</a>
+          <a href="#" class="header_filter_link">Japanese</a>
+          <a href="#" class="header_filter_link">American</a>
+          <a href="#" class="header_filter_link">Chinese</a>
+          <a href="#" class="header_filter_link">Korean</a>
+          <a href="#" class="header_filter_link">English</a>
+          <a href="#" class="header_filter_link">Italian</a>
+        </div>
+        <img src="/Buy/E-Commerce-Website-main/image/gallery/bmwBanner.jpg" alt="" class="header_img" />
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="section_category">
+          <p class="section_category_p">German</p>
+        </div>
+        <div class="section_header">
+          <h3 class="section_title">BMW</h3>
+          <p id="demo"></p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/i4.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">i4 m50</h3>
+                  <p class="card_price">$7,000/month</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="i4 m50"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/i4.jpg"
+                    data-price="$7,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/ix.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">iX5</h3>
+                  <p class="card_price">$8,000/month</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="ix5"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/ix.jpg"
+                    data-price="$8,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/m4.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">m4 competetion</h3>
+                  <p class="card_price">$9,000/month</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="m4 competetion"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/m4.jpg"
+                    data-price="$9,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/m3.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">m3 competetion</h3>
+                  <p class="card_price">$8,000/month</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="m3 competetion"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/m3.jpg"
+                    data-price="$8,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/i4.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">i4 m50</h3>
+                  <p class="card_price">$5,000/month</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="i4 m50"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/i4.jpg"
+                    data-price="$5,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/ix.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">i4 m50</h3>
+                  <p class="card_price">$5,000/month</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="A4"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/a5.png"
+                    data-price="$5,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/m4.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">i4 m50</h3>
+                  <p class="card_price">$5,000/month</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="m4"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/m4.jpg"
+                    data-price="$8,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/m3.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">i4 m50</h3>
+                  <p class="card_price">$520,000</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                  <button
+                  onclick="alertInnit()"
+                    class="add_to_cart"
+                    data-id="Rent"
+                    data-title="m4"
+                    data-image="/Buy/E-Commerce-Website-main/image/gallery/m4.jpg"
+                    data-price="$8,000/month">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="container_btn">
+          <a href="#" class="container_btn_a">ALL BMW CARS</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section_category">
+          <p class="section_category_p">categories</p>
+        </div>
+        <div class="section_header">
+          <h3 class="section_title">Browse by car type</h3>
+        </div>
+        <div class="categories">
+          <div class="category">
+            <img src="./image/icons/sedan.png" alt="" class="category_icon" />
+            <p class="category_name">Sedans</p>
+          </div>
+          <div class="category">
+            <img
+              src="./image/icons/coupe.png"
+              alt=""
+              class="category_icon" />
+            <p class="category_name">Coupe</p>
+          </div>
+          <div class="category">
+            <img src="./image/icons/convert.png" alt="" class="category_icon" />
+            <p class="category_name">Convertible</p>
+          </div>
+          <div class="category">
+            <img
+              src="./image/icons/hatchback.png"
+              alt=""
+              class="category_icon" />
+            <p class="category_name">Hatchback</p>
+          </div>
+          <div class="category">
+            <img src="./image/icons/suv.png" alt="" class="category_icon" />
+            <p class="category_name">SUV</p>
+          </div>
+          <div class="category">
+            <img src="./image/icons/crossover.png" alt="" class="category_icon" />
+            <p class="category_name">Crossover</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section_category">
+          <p class="section_category_p">German</p>
+        </div>
+        <div class="section_header">
+          <h3 class="section_title">Audi</h3>
+          <p id="demo"></p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/a5.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">A5</h3>
+                  <p class="card_price">$3000,000</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/a6.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  
+                  </div>
+                </div>
+                <div class="card_body">A6</h3>
+                  <p class="card_price">$420,000</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/a7.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">A7</h3>
+                  <p class="card_price">$620,000</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/a8.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">A8</h3>
+                  <p class="card_price">$720,000</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/q5.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">Q5</h3>
+                  <p class="card_price">$420,000</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card_top">
+                  <img src="/Buy/E-Commerce-Website-main/image/gallery/r8.jpg" alt="" class="card_img" />
+                  <div class="card_top_icons">
+                    
+                  
+                  </div>
+                </div>
+                <div class="card_body">
+                  <h3 class="card_title">R8</h3>
+                  <p class="card_price">$1,380,000</p>
+                  <div class="card_ratings">
+                    <div class="card_stars">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="container_btn">
+          <a href="#" class="container_btn_a">VIEW ALL VEHICLE</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="trending">
+          <div class="trending_content">
+            <p class="trending_p">Audi Rs3</p>
+            <h2 class="trending_title">Enjoy the feat of german engineering</h2>
+            <a href="#" class="trending_btn">Reserve now!</a>
+          </div>
+          <img src="/Buy/E-Commerce-Website-main/image/gallery/Audimain-removebg-preview.png" alt="" class="trending_img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section_category">
+          <p class="section_category_p">Our vehicles</p>
+        </div>
+        <div class="section_header">
+          <h3 class="section_title">Explore Our vehicles</h3>
+          <p id="demo"></p>
+        </div>
+        <div class="products">
+          <div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/rs3.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">RS3</h3>
+              <p class="card_price">$1,200,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/rs5.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">RS5</h3>
+              <p class="card_price">$1,500,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/rs7.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">RS7</h3>
+              <p class="card_price">$1,600,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/a6.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">A6</h3>
+              <p class="card_price">$400,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/a7.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">A7</h3>
+              <p class="card_price">$500,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/m3.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">M3</h3>
+              <p class="card_price">$900,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/m4.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">M4</h3>
+              <p class="card_price">$1,200,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/a8.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">A8</h3>
+              <p class="card_price">$700,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/i4.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">i4 m50</h3>
+              <p class="card_price">$520,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/r8.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">R8</h3>
+              <p class="card_price">$1,500,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/a8.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">RS8</h3>
+              <p class="card_price">$800,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div><div class="card">
+            <div class="card_top">
+              <img src="/Buy/E-Commerce-Website-main/image/gallery/rs5.jpg" alt="" class="card_img" />
+              <div class="card_top_icons">
+              
+              </div>
+            </div>
+            <div class="card_body">
+              <h3 class="card_title">RS5</h3>
+              <p class="card_price">$1,500,000</p>
+              <div class="card_ratings">
+                <div class="card_stars">
+       
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_btn">
+          <a href="#" class="container_btn_a">VIEW ALL VEHICLES</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container services_container">
+        <div class="service">
+          <img src="./image/icons/service-1.png" alt="" class="service_img" />
+          <h3 class="service_title">FAST AND SAFE DELIVERY</h3>
+          <p class="service_p">Your vehicle delivered to you.</p>
+        </div>
+        <div class="service">
+          <img src="./image/icons/service-2.png" alt="" class="service_img" />
+          <h3 class="service_title">Great SUPPORT</h3>
+          <p class="service_p">Contact us for details and support.</p>
+        </div>
+        <div class="service">
+          <img src="./image/icons/service-3.png" alt="" class="service_img" />
+          <h3 class="service_title">Garanteed satisfaction</h3>
+          <p class="service_p">Customer satisfaction is our number 1 priority.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">Rent my ride</a>
+          <div class="footer_p">
+            Buy/rent with us with the prices on the market and the best support.
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Contact</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Tai Wai, Hong Kong</li>
+            <li class="li footer_list_item">ex@uowmain.edu.au</li>
+            <li class="li footer_list_item">+852 9999 9999</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Services</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Tuning</li>
+            <li class="li footer_list_item">Auto repair</li>
+            <li class="li footer_list_item">Rental service</li>
+            <li class="li footer_list_item">Quote</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Filler stuff</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Lorem, ipsum dolor.</li>
+            <li class="li footer_list_item">Lorem, ipsum.</li>
+            <li class="li footer_list_item">Lorem, ipsum.</li>
+            <li class="li footer_list_item">Lorem.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">
+            Copyright Group 3. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
